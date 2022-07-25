@@ -1,0 +1,1 @@
+{"version":3,"file":"recommended.js","sourceRoot":"","sources":["../../src/configs/recommended.ts"],"names":[],"mappings":";AAAA,iBAAS;IACP,OAAO,EAAE,CAAC,gBAAgB,CAAC;IAC3B,KAAK,EAAE;QACL,qCAAqC,EAAE,OAAO;QAC9C,qCAAqC,EAAE,OAAO;QAC9C,0CAA0C,EAAE,MAAM;QAClD,2CAA2C,EAAE,MAAM;QACnD,qCAAqC,EAAE,OAAO;QAC9C,wCAAwC,EAAE,OAAO;KAClD;CACF,CAAC"}
