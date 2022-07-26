@@ -82,7 +82,7 @@ exports.default = (0, createRule_1.createRule)({
                         },
                     });
                 }
-                else {
+                else if (!found.nullableOption) {
                     context.report({
                         node: decoratorProps.node,
                         messageId: 'superfluousDecoratorNullableOption',
