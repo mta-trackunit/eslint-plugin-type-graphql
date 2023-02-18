@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-type-graphql",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Linter for TypeGraphQL decorators",
   "main": "dist/index.js",
   "repository": {
@@ -31,9 +31,9 @@
     "@types/validator": "^13.7.1",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
-    "class-validator": "^0.13.2",
+    "class-validator": "^0.14.0",
     "eslint": "^8.6.0",
-    "graphql": "^16.2.0",
+    "graphql": "^15.8.0",
     "husky": "^7.0.4",
     "jest": "^27.4.7",
     "lint-staged": "^12.1.6",

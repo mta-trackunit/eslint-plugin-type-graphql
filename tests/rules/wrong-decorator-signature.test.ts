@@ -31,6 +31,7 @@ ruleTester.run('wrong-decorator-signature', rule, {
   valid: [
     createObjectType('@Field(() => String)\nmyString!: string;'),
     createObjectType('@Field(function(){ return String; })\nmyString!: string;'),
+    createObjectType('@Field(() => String, { nullable: true })\nmyString?: string;'),
     createObjectType('@Field(() => String, { nullable: true })\nmyString!: string | null;'),
     createObjectType('@Field(() => String, { nullable: true })\nmyString!: string | undefined;'),
     createObjectType("@Field(() => [String], { nullable: 'items' })\nmyArray!: Array<string | null>;"),
@@ -111,6 +112,10 @@ ruleTester.run('wrong-decorator-signature', rule, {
     },
     {
       code: createObjectType('@Field(() => [String])\nmyArray?: Array<string>'),
+      errors: [{ ...DEFAULT_ERROR_LOCATION, messageId: 'missingDecoratorNullableOption' }],
+    },
+    {
+      code: createObjectType('@Field(() => String, { nullable: false })\nmyString?: string;'),
       errors: [{ ...DEFAULT_ERROR_LOCATION, messageId: 'missingDecoratorNullableOption' }],
     },
     {
